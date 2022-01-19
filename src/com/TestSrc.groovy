@@ -2,14 +2,15 @@ package com;
 
 public class TestSrc{
   Script script;
-public TestSrc(){
+public TestSrc(def this){
+  script = this
   println("In contructor....");
-  Script.echo "In contructor...."
+  script.echo "In contructor...."
 }
 public String displayName(String name){
   println("DisplayName... ${name}")
   System.out.println("DisplayName... ${name}")
-  Script.echo "DisplayName... ${name}"
+  script.echo "DisplayName... ${name}"
   return "From TestSrc ${name}"
 }
 }
