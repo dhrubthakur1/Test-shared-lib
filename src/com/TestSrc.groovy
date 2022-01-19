@@ -2,8 +2,8 @@ package com;
 
 public class TestSrc{
   Script script;
-public TestSrc(def this){
-  script = this
+public TestSrc(def scr){
+  script = scr
   println("In contructor....");
   script.echo "In contructor...."
 }
